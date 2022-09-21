@@ -133,5 +133,7 @@
         };
         return "nada";
     };
-    materia("lunes", 8, 59);
+    $hora_actual = date("h", time());
+    $minuto_actual = date("i", time());
+    materia("lunes", $hora_actual, $minuto_actual);
 ?>
