@@ -50,7 +50,7 @@
         ),
         "DOR" => array(
             "Materia" => "Diseño de interfaces web",
-            "Docente" => "No se",
+            "Docente" => "Ermis",
             "Horario" => array(
                 "lunes" => "No se imparte",
                 "martes" => array("Quinta", "Sexta"),
@@ -62,63 +62,76 @@
         )
         );
 
-    function materia($dia, $hora, $minuto) {
+    function materia($dia, $hora, $minutos) {
         $horario = "";
-        if ($hora = 8 || $minutos < 55) {
+        if ($hora == 8 && $minutos < 55) {
             $horario = "Primera";
-        };
-        if ($hora = 8 || $minutos >= 55) {
+        }
+        elseif ($hora == 8 && $minutos >= 55) {
             $horario = "Segunda";
-        };
-        if ($hora = 9 || $minutos < 50) {
+        }
+
+        elseif ($hora == 9 && $minutos < 50) {
             $horario = "Segunda";
-        };
-        if ($hora = 9 || $minutos >=50 ) {
+        }
+
+        elseif ($hora == 9 && $minutos >50 ) {
             $horario = "Tercera";
-        };
-        if ($hora = 10 || $minutos < 45) {
+        }
+
+        elseif ($hora == 10 && $minutos < 45) {
             $horario = "Tercera";
-        };
-        if ($hora = 11 || $minutos >= 15) {
+        }
+
+        elseif ($hora == 11 && $minutos >= 15) {
             $horario = "Cuarta";
-        };
-        if ($hora = 12 || $minutos < 10) {
+        }
+
+        elseif ($hora == 12 && $minutos < 10) {
             $horario = "Cuarta";
-        };
-        if ($hora = 12 || $minutos >= 10) {
+        }
+
+        elseif ($hora == 12 && $minutos >= 10) {
             $horario = "Quinta";
-        };
-        if ($hora = 13 || $minutos < 5) {
+        }
+
+        elseif ($hora == 13 && $minutos < 5) {
             $horario = "Quinta";
-        };
-        if ($hora = 13 || $minutos >= 5) {
+        }
+
+        elseif ($hora == 13 && $minutos >= 5) {
             $horario = "Sexta";
         };
         global $horari;
-        for ($num_elementos = 0; $num_elementos <= 2; $num_elementos++) {
-            $materia = "";
-            if ($num_elementos = 0) {
-                $materia = "EMR";
-            };
-            if ($num_elementos = 1) {
-                $materia = "DPL";
-            };
-            if ($num_elementos = 2) {
-                $materia = "DSW";
-            };
-            if ($num_elementos = 3) {
-                $materia = "DEW";
-            };
-            if ($num_elementos = 4) {
-                $materia = "DOR";
-            };
-            if (var_dump($horari[$materia]["Horario"][$dia]) != "No se imparte") {
-                $is_array = is_array($horari[$materia]["Horario"][$dia]) ? "Si" : "No";
-                if ($is_array = "Si") {
-                    echo(var_dump($horari[$materia]["Horario"][$dia]));
+        foreach ($horari as $materia) {
+            if ($materia["Horario"][$dia] != "No se imparte") {
+                $is_array = is_array($materia["Horario"][$dia]) ? "Si" : "No";
+                if ($is_array == "Si") {
+                    foreach ($materia["Horario"][$dia] as $hora_materia) {
+                        if ($hora_materia == $horario) {
+                            echo ($materia["Materia"]);
+                            echo(" ");
+                            echo ($materia["Docente"]);
+                            echo(" ");
+                            echo ($materia["Taller"]);
+                            return;
+                        }
+                    }
+                }
+                else {
+                    $hora_materia = $materia["Horario"][$dia];
+                    if ($hora_materia == $horario) {
+                        echo ($materia["Materia"]);
+                        echo(" ");
+                        echo ($materia["Docente"]);
+                        echo(" ");
+                        echo ($materia["Taller"]);
+                        return;
+                    };
                 };
             };
-        }
+        };
+        return "nada";
     };
-    materia("martes", 8, 40);
+    materia("lunes", 8, 59);
 ?>
