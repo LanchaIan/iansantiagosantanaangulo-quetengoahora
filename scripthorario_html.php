@@ -3,6 +3,18 @@
         <title>Horario de clase</title>
     </head>
     <body>
+    <form action="alumnooprofesor.php">
+        <label for="horario">Escoge un horario:</label>
+        <select  name="horario" id="horario">
+        <optgroup label="horario">
+            <option value="Profesorado">Profesorado</option>
+            <option value="Alumnado">Alumnado</option>
+        </optgroup>
+        </select>    
+        <input type="submit" value="Submit">
+    </form>
+    
+    
     <table border="1">
     <tr>
         <th>Lunes</th>
