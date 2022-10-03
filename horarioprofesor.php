@@ -24,25 +24,25 @@
         <th>Viernes</th>
     </tr>
     <tr>
-        <td style="background-color: rgb(250, 108, 108)">EMR</td>
-        <td style="background-color: rgb(185, 125, 188)">DPL</td>
-        <td style="background-color: rgb(164, 251, 132)">DEW</td>
-        <td style="background-color: rgb(185, 125, 188)">DPL</td>
-        <td style="background-color: rgb(254, 176, 102)">DOR</td>
+        <td style="background-color: rgb(250, 108, 108)">1DAW_PRG</td>
+        <td style="background-color: rgb(185, 125, 188)">2DAW_DSW</td>
+        <td style="background-color: rgb(164, 251, 132)">2DAW_DEW</td>
+        <td style="background-color: rgb(185, 125, 188)">2DAW_DSW</td>
+        <td style="background-color: rgb(254, 176, 102)">1DAW_IGL</td>
     </tr>
     <tr>
-        <td style="background-color: rgb(51, 255, 249)">DSW</td>
-        <td style="background-color: rgb(185, 125, 188)">DPL</td>
-        <td style="background-color: rgb(164, 251, 132)">DEW</td>
-        <td style="background-color: rgb(185, 125, 188)">DPL</td>
-        <td style="background-color: rgb(254, 176, 102)">DOR</td>
+        <td style="background-color: rgb(51, 255, 249)">1DAW_BD</td>
+        <td style="background-color: rgb(185, 125, 188)">2DAW_DSW</td>
+        <td style="background-color: rgb(164, 251, 132)">2DAW_DEW</td>
+        <td style="background-color: rgb(185, 125, 188)">2DAW_DSW</td>
+        <td style="background-color: rgb(254, 176, 102)">1DAW_IGL</td>
     </tr>
     <tr>
-        <td style="background-color: rgb(51, 255, 249)">DSW</td>
-        <td style="background-color: rgb(51, 255, 249)">DSW</td>
-        <td style="background-color: rgb(51, 255, 249)">DSW</td>
-        <td style="background-color: rgb(185, 125, 188)">DPL</td>
-        <td style="background-color: rgb(185, 125, 188)">DPL</td>
+        <td style="background-color: rgb(51, 255, 249)">1DAW_BD</td>
+        <td style="background-color: rgb(51, 255, 249)">1DAW_BD</td>
+        <td style="background-color: rgb(51, 255, 249)">1DAW_BD</td>
+        <td style="background-color: rgb(185, 125, 188)">2DAW_DSW</td>
+        <td style="background-color: rgb(185, 125, 188)">2DAW_DSW</td>
     </tr>
     <tr>
         <td></td>
@@ -52,34 +52,33 @@
         <td></td>
     </tr>
     <tr>
-        <td style="background-color: rgb(164, 251, 132)">DEW</td>
-        <td style="background-color: rgb(51, 255, 249)">DSW</td>
-        <td style="background-color: rgb(51, 255, 249)">DSW</td>
-        <td style="background-color: rgb(164, 251, 132)">DEW</td>
-        <td style="background-color: rgb(250, 108, 108)">EMR</td>
+        <td style="background-color: rgb(164, 251, 132)">2DAW_DEW</td>
+        <td style="background-color: rgb(51, 255, 249)">1DAW_BD</td>
+        <td style="background-color: rgb(51, 255, 249)">1DAW_BD</td>
+        <td style="background-color: rgb(164, 251, 132)">2DAW_DEW</td>
+        <td style="background-color: rgb(250, 108, 108)">1DAW_PRG</td>
     </tr>
     <tr>
-        <td style="background-color: rgb(164, 251, 132)">DEW</td>
-        <td style="background-color: rgb(254, 176, 102)">DOR</td>
-        <td style="background-color: rgb(254, 176, 102)">DOR</td>
-        <td style="background-color: rgb(164, 251, 132)">DEW</td>
-        <td style="background-color: rgb(51, 255, 249)">DSW</td>
+        <td style="background-color: rgb(164, 251, 132)">2DAW_DEW</td>
+        <td style="background-color: rgb(254, 176, 102)">1DAW_IGL</td>
+        <td style="background-color: rgb(254, 176, 102)">1DAW_IGL</td>
+        <td style="background-color: rgb(164, 251, 132)">2DAW_DEW</td>
+        <td style="background-color: rgb(51, 255, 249)">1DAW_BD</td>
     </tr>
     <tr>
-        <td style="background-color: rgb(164, 251, 132)">DEW</td>
-        <td style="background-color: rgb(254, 176, 102)">DOR</td>
-        <td style="background-color: rgb(254, 176, 102)">DOR</td>
-        <td style="background-color: rgb(250, 108, 108)">EMR</td>
-        <td style="background-color: rgb(51, 255, 249)">DSW</td>
+        <td style="background-color: rgb(164, 251, 132)">2DAW_DEW</td>
+        <td style="background-color: rgb(254, 176, 102)">1DAW_IGL</td>
+        <td style="background-color: rgb(254, 176, 102)">1DAW_IGL</td>
+        <td style="background-color: rgb(250, 108, 108)">1DAW_PRG</td>
+        <td style="background-color: rgb(51, 255, 249)">1DAW_BD</td>
     </tr>
     </table>
         <table>
             <tr>
                 <?php
                     $horari = array(
-                        "EMR" => array(
-                            "Materia" => "Empresa",
-                            "Docente" => "Marisol",
+                        "1DAW_PRG" => array(
+                            "Materia" => "Programación",
                             "Horario" => array(
                                 "lunes" => "Primera",
                                 "martes" => "No se imparte",
@@ -89,9 +88,8 @@
                             ),
                             "Taller" => "201"
                         ),
-                        "DPL" => array(
-                            "Materia" => "Despliegue de aplicaciones web",
-                            "Docente" => "Nomesel Nombre",
+                        "2DAW_DSW" => array(
+                            "Materia" => "Desarrollo web en entorno servidor",
                             "Horario" => array(
                                 "lunes" => "No se imparte",
                                 "martes" => array("Primera", "Segunda"),
@@ -101,9 +99,8 @@
                             ),
                             "Taller" => "201"
                         ),
-                        "DSW" => array(
-                            "Materia" => "Desarrollo web en entorno servidor",
-                            "Docente" => "Sergio",
+                        "1DAW_BD" => array(
+                            "Materia" => "Base de datos",
                             "Horario" => array(
                                 "lunes" => array("Segunda", "Tercera"),
                                 "martes" => array("Tercera", "Cuarta"),
@@ -113,9 +110,8 @@
                             ),
                             "Taller" => "201"
                         ),
-                        "DEW" => array(
+                        "2DAW_DEW" => array(
                             "Materia" => "Desarrollo web en entorno cliente",
-                            "Docente" => "Profesor X",
                             "Horario" => array(
                                 "lunes" => array("Cuarta", "Quinta", "Sexta"),
                                 "martes" => "No se imparte",
@@ -125,9 +121,8 @@
                             ),
                             "Taller" => "201"
                         ),
-                        "DOR" => array(
-                            "Materia" => "Diseño de interfaces web",
-                            "Docente" => "Ermis",
+                        "1DAW_IGL" => array(
+                            "Materia" => "Inglés",
                             "Horario" => array(
                                 "lunes" => "No se imparte",
                                 "martes" => array("Quinta", "Sexta"),

@@ -1,6 +1,12 @@
 <?php
-    $horario = $_POST["value"];
+    echo "naita";
+    header('Location: scripthorario_html.php');
+    header('Location: horarioprofesor.php');
+    $horario = $_POST["horario"];
     if ($horario == "Alumnado") {
-        echo "vamooo";
+        header('Location: scripthorario_html.php');
+    }
+    else {
+        header('Location: horarioprofesor.php');
     };
 ?>
