@@ -183,8 +183,6 @@
                                         if ($hora_materia == $horario) {
                                             echo ($materia["Materia"]);
                                             echo(" ");
-                                            echo ($materia["Docente"]);
-                                            echo(" ");
                                             echo ($materia["Taller"]);
                                             return;
                                         }
@@ -194,8 +192,6 @@
                                     $hora_materia = $materia["Horario"][$dia];
                                     if ($hora_materia == $horario) {
                                         echo ($materia["Materia"]);
-                                        echo(" ");
-                                        echo ($materia["Docente"]);
                                         echo(" ");
                                         echo ($materia["Taller"]);
                                         return;
